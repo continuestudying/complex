@@ -12,7 +12,7 @@ after_success:
   - docker build -t continuestudying/multi-client ./client
   - docker build -t continuestudying/multi-nginx ./nginx
   - docker build -t continuestudying/multi-server ./server
-  - docker build -t continuestudying/multi-worker ./worder
+  - docker build -t continuestudying/multi-worker ./worker
 
   # Login to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
